@@ -131,6 +131,10 @@ CATEGORY_TEMPLATES = (
         "image": IMAGES_PATH + "/category_square.png",
         "name": _(u"Category with subcategories"),
     }),
+    (2, {"file": "%s/%s" % (CAT_PRODUCT_PATH, "product_small_list.html"),
+        "image": IMAGES_PATH + "/product_default.png",
+        "name": _(u"Category with display line products"),
+    }),
 )
 CATEGORY_TEMPLATES = getattr(settings, 'CATEGORY_TEMPLATES', CATEGORY_TEMPLATES)
 
@@ -139,6 +143,10 @@ PRODUCT_TEMPLATES = (
     (0, {"file": "%s/%s" % (PRODUCT_PATH, "product_inline.html"),
         "image": IMAGES_PATH + "/product_default.png",
         "name": _(u"Default")
+    },),
+    (1, {"file": "%s/%s" % (PRODUCT_PATH, "product_small_list.html"),
+        "image": IMAGES_PATH + "/product_default.png",
+        "name": _(u"Products List")
     },),
 )
 PRODUCT_TEMPLATES = getattr(settings, 'PRODUCT_TEMPLATES', PRODUCT_TEMPLATES)
