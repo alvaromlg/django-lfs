@@ -151,7 +151,7 @@ PRODUCT_TEMPLATES = (
 )
 PRODUCT_TEMPLATES = getattr(settings, 'PRODUCT_TEMPLATES', PRODUCT_TEMPLATES)
 
-THUMBNAIL_SIZES = getattr(settings, 'LFS_THUMBNAIL_SIZES', ((60, 60), (100, 100), (200, 200), (300, 300), (400, 400)))
+THUMBNAIL_SIZES = getattr(settings, 'LFS_THUMBNAIL_SIZES', ((32, 32), (60, 60), (100, 100), (200, 200), (300, 300), (400, 400)))
 
 if getattr(settings, 'SOLR_ENABLED', False):
     SORTING_MAP = (
