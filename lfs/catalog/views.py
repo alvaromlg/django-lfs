@@ -413,6 +413,7 @@ def category_products(request, slug, start=1, template_name="lfs/catalog/categor
             "image": image,
             "price_unit": product.price_unit,
             "price_includes_tax": product.price_includes_tax(request),
+            "id": product.id,
         })
         if (i + 1) % amount_of_cols == 0:
             products.append(row)
